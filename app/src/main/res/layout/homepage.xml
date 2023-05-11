@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homepagebg"
+    tools:context=".Homepage">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/homepagelogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="69dp"
+            android:src="@drawable/homepagelogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imgbtntotalsavings"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="500dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/totalsavingsframe"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.761"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homepagelogo"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txthello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Hello Lance!"
+            android:textColor="#070707"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtwelcome"
+            app:layout_constraintStart_toEndOf="@+id/homepagelogo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtwelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="-1dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Welcome Back!"
+            android:textColor="#070707"
+            android:textSize="24sp"
+            app:layout_constraintStart_toEndOf="@+id/homepagelogo"
+            app:layout_constraintTop_toBottomOf="@+id/txthello" />
+
+        <ImageButton
+            android:id="@+id/imgbtnnotif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:layout_marginEnd="16dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/notiflogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txttotalsavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Total Savings"
+            android:textColor="#050505"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/txttotalsavingsnum"
+            app:layout_constraintStart_toStartOf="@+id/imgbtntotalsavings"
+            app:layout_constraintTop_toBottomOf="@+id/txtwelcome"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txttotalsavingsnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="92dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱18,678"
+            android:textColor="#070707"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="@+id/imgbtntotalsavings"
+            app:layout_constraintTop_toBottomOf="@+id/txtwelcome" />
+
+        <TextView
+            android:id="@+id/txtuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Salera, Lance Vincent"
+            android:textColor="#090909"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/imgbtntotalsavings"
+            app:layout_constraintTop_toBottomOf="@+id/txttotalsavingsnum" />
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="as of 08/05/2023"
+            android:textColor="#070707"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/imgbtntotalsavings"
+            app:layout_constraintTop_toBottomOf="@+id/txtuser" />
+
+        <TextView
+            android:id="@+id/txttoday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Today"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/imgbtntotalsavings"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <TextView
+            android:id="@+id/txtbillreminders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Bill Reminders"
+            android:textColor="#050505"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtnsavings" />
+
+        <ImageButton
+            android:id="@+id/imgbtnsavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="44dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/whiteframe"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <ImageButton
+            android:id="@+id/imgbtnexpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="32dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/whiteframe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <TextView
+            android:id="@+id/txtsavingsarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:text="⬆"
+            android:textColor="#2D9D94"
+            android:textSize="50sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txttoday" />
+
+        <TextView
+            android:id="@+id/txtexpensesarrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="152dp"
+            android:rotationX="-184"
+            android:scaleX="-1"
+            android:text="⬆"
+            android:textColor="#D62279"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <TextView
+            android:id="@+id/txtsavings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="56dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Savings"
+            android:textColor="#2D9D94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <TextView
+            android:id="@+id/txtsavingsnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 200.00"
+            android:textColor="#2D9D94"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <TextView
+            android:id="@+id/txtexpenses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:layout_marginEnd="88dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Expenses"
+            android:textColor="#D62279"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <TextView
+            android:id="@+id/txtexpensesnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="68dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 180.13"
+            android:textColor="#D62279"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <ImageView
+            android:id="@+id/imgbill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="172dp"
+            android:layout_marginEnd="28dp"
+            android:src="@drawable/whiteframe2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <ImageView
+            android:id="@+id/imgbill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/whiteframe2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbill1" />
+
+        <TextView
+            android:id="@+id/txtbill1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Electric Bill"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtbillreminders" />
+
+        <TextView
+            android:id="@+id/txtbill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="120dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="Water Bill"
+            android:textColor="#222222"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtbillreminders" />
+
+        <TextView
+            android:id="@+id/txtbill1num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="188dp"
+            android:layout_marginEnd="52dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 200.00"
+            android:textColor="#2D9D94"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbtntotalsavings" />
+
+        <TextView
+            android:id="@+id/txtbill2num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="48dp"
+            android:fontFamily="@font/nunitobold"
+            android:text="₱ 180.13"
+            android:textColor="#D62279"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgbill1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
